@@ -1,7 +1,4 @@
-<div *ngIf="appstatus">
-	<p>
-		Start editing to see some magic happen :)
-	</p>
+<div>
 	<h1>{{name}}</h1>
 </div>
 <div>
@@ -9,10 +6,14 @@
 		<tr>
 			<th>Id</th>
 			<th>Name</th>
+      <th>Marks</th>
+      <th>Grade</th>
 		</tr>
-		<tr *ngFor='let i of applist'>
-			<td>{{i.Id}}</td>
-			<td>{{i.Name}}</td>
-		</tr>
+    <tr *ngFor='let student of students'>
+      <td>{{student.Id}}</td>
+      <td>{{student.Name}}</td>
+      <td>{{student.Marks}}</td>
+      <td>{{student.Grade}}</td>
+    </tr>
 	</table>
 </div>
